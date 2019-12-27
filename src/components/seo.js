@@ -30,7 +30,7 @@ function SEO({ description, lang, meta, title }) {
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang, meta,
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
@@ -73,9 +73,9 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
+  lang: `pl`,
+  meta: [`To jest przykładowa strona aipoz`],
+  description: `To jest opis strony aipoz`,
 }
 
 SEO.propTypes = {
